@@ -1,0 +1,28 @@
+<!--pages/history/history.wxml-->
+<scroll-view 
+  class='boy-scroll'
+  scroll-y
+  bindscrolltolower="loadMore"
+  bindscrolltoupper="refreshList"
+  lower-threshold="200"
+> 
+<view class='boy-list'>
+<block wx:for="{{history}}" wx:key="{{item.id}}">
+      <view  
+        bindtap="toDatail"
+        class='boy-list-item'
+        data-id='{{item.id}}'
+        data-brand='{{item.brand_name}}'
+        data-name='{{item.product_name}}'
+        data-price='{{item.price}}'
+        data-img='{{item.thumb}}'
+        data-total='{{item.total_quantity}}'
+        >
+        <image mode="widthFix" src="{{item.img}}"></image>
+        <text>{{item.brand}}</text>
+        <text>{{item.name}}</text>
+        <text class='boy-list-price'>￥{{item.price}}</text>
+      </view>
+</block>
+</view>
+</scroll-view> 

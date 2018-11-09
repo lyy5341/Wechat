@@ -60,6 +60,7 @@ page{
   justify-content: center;
 }
 
+
 /*商品交易*/
 .boy-goods{
   width: 100%;

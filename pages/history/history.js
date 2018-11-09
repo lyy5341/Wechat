@@ -1,4 +1,4 @@
-// pages/mine/mine.js
+// pages/history/history.js
 const app = getApp()
 Page({
 
@@ -6,27 +6,14 @@ Page({
    * 页面的初始数据
    */
   data: {
-    name: '25boy',
-    head: '../../assets/img/head.jpg',
-    collect: 1,
-    history: app.historycount,
-    money: 0.00,
+    history: []
   },
-  toHistory(){
-    wx.navigateTo({
-      url: '../history/history',
-    })
-  },
-  
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(app.userifo)
-    this.setData({
-      name: app.userifo.nickName,
-      head: app.userifo.avatarUrl
-    })
+
   },
 
   /**
@@ -41,7 +28,7 @@ Page({
    */
   onShow: function () {
     this.setData({
-      history: app.historycount
+      history: app.historylist
     })
   },
 

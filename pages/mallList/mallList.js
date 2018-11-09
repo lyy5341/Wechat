@@ -1,5 +1,6 @@
 // pages/mallList/mallList.js
 import ajax from '../../utils/request.js'
+const app = getApp()
 Page({
   
   /**
@@ -20,6 +21,15 @@ Page({
       img,
       total,
     } = e.currentTarget.dataset;
+    var hisroty = {
+      id,
+      brand,
+      name,
+      price,
+      img,
+      total,
+    }
+    app.setHistory(hisroty)
     name = name.split("&").join("")
     wx.navigateTo({
       url: `/pages/detail/detail?id=${id}&brand=${brand}&price=${price}&img=${img}&name=${name}&total=${total}`,

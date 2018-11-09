@@ -1,0 +1,30 @@
+/* pages/history/history.wxss */
+
+page{
+  height: 100%;
+}
+ .boy-scroll{
+   height: 100%;
+ }
+ .boy-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around
+  }
+  .boy-list-item{
+    width: 45%;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .boy-list-item image{
+    width: 100%;
+  }
+  .boy-list-price{
+    color: red;
+    font-weight: bolder;
+    margin-top: 5rpx;
+  }

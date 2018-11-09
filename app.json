@@ -6,7 +6,8 @@
     "pages/cart/cart",
     "pages/mine/mine",
     "pages/mallList/mallList",
-    "pages/detail/detail"
+    "pages/detail/detail",
+    "pages/history/history"
   ],
   "window":{
     "backgroundTextStyle":"light",

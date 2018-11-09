@@ -13,6 +13,8 @@ App({
   },
   userifo: wx.getStorageSync("user-ifo"),
   cart: wx.getStorageSync("mall-List") || [],
+  historylist: wx.getStorageSync("history-list") || [],
+  historycount: wx.getStorageSync("history-list").length || 0,
   addToCart(item){
     const isInCart = this.cart.some(cartItem => cartItem.id === item.id);
     if(isInCart){
@@ -34,6 +36,16 @@ App({
       icon: 'success',
       duration: 1200
     })
+  },
+  setHistory(history){ 
+    // console.log(this.historylist)
+    this.historylist = this.historylist.filter(goods => {
+      return goods.id !== history.id ;
+    });  
+    this.historylist.unshift({...history})
+    this.historycount = this.historylist.length,   
+    // console.log(this.historycount)  
+    wx.setStorageSync('history-list', this.historylist)
   },
   addToCount(id) {
     // console.log(id)
@@ -76,7 +88,7 @@ App({
     });  
     this.setBadge()
     wx.setStorageSync('mall-List',this.cart)
-    console.log(this.cart)
+    // console.log(this.cart)
   },
   globalData: {
     userInfo: null

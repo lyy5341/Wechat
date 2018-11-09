@@ -8,8 +8,8 @@
   <view class='boy-header-bottom'>
     <view class='boy-header-left'>
       <text class='boy-header-count'>{{collect}}</text>
-      <text class='boy-header-text'>关注的产品</text></view>  
-    <view class='boy-header-left'>
+      <text class='boy-header-text'>关注的产品</text></view> 
+    <view class='boy-header-left' bindtap='toHistory'>
       <text class='boy-header-count'>{{history}}</text>
       <text class='boy-header-text'>浏览历史记录</text></view>
   </view>
