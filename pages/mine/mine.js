@@ -6,9 +6,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-    name: '25boy',
-    head: '../../assets/img/head.jpg',
-    collect: 1,
+    name: app.userifo.nickName,
+    head: app.userifo.avatarUrl,
+    collect: 4,
     history: app.historycount,
     money: 0.00,
   },
@@ -41,7 +41,9 @@ Page({
    */
   onShow: function () {
     this.setData({
-      history: app.historycount
+      history: app.historycount,
+      name: app.userifo.nickName,
+      head: app.userifo.avatarUrl
     })
   },
 

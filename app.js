@@ -37,6 +37,11 @@ App({
       duration: 1200
     })
   },
+  setUserifo(e){
+    console.log(e)
+    wx.setStorageSync('user-ifo', e.detail.userInfo)
+    this.userifo = e.detail.userInfo
+  },
   setHistory(history){ 
     // console.log(this.historylist)
     this.historylist = this.historylist.filter(goods => {
@@ -88,7 +93,6 @@ App({
     });  
     this.setBadge()
     wx.setStorageSync('mall-List',this.cart)
-    // console.log(this.cart)
   },
   globalData: {
     userInfo: null

@@ -17,7 +17,7 @@ Page({
     })
   },
   getUserInfo: function (e) {
-    wx.setStorageSync('user-ifo', e.detail.userInfo)
+    app.setUserifo(e)
     app.globalData.userInfo = e.detail.userInfo
     this.setData({
       userInfo: e.detail.userInfo,
