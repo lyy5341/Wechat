@@ -1,0 +1,39 @@
+<!--pages/mall/mall.wxml-->
+<view class="boy-title">
+  <image src="https://img.25miao.com/114/ce932c6c363c7920b15683302bf3cde0.jpg" alt="11月充200送200"></image>
+</view>
+<view class='boy-mall'>
+  <view class="boy-clothes-title">
+    <image src="https://api.25boy.cn/Public/img/categorys-tit-20.png" alt="男装上装"></image>
+  </view>
+  <view  class="boy-clothes">
+    <block wx:for="{{cloUrls}}" wx:key="{{clothoesUrl}}">
+    <view bindtap="toList" data-cid='{{item.cid}}'>
+      <image src="{{item.img}}"></image>
+    </view>
+    </block>
+  </view>
+  
+  <view class="boy-clothes-title">
+    <image src="https://api.25boy.cn/Public/img/categorys-tit-22.png" alt="男装上装"></image>
+  </view>
+  <view  class="boy-clothes">
+    <block wx:for="{{pantsUrls}}" wx:key="{{pantsUrls}}">
+    <view bindtap="toList" data-cid='{{item.cid}}'>
+      <image src="{{item.img}}"></image>
+    </view>
+    </block>
+  </view>
+
+  <view class="boy-clothes-title">
+    <image src="https://api.25boy.cn/Public/img/categorys-tit-40.png" alt="男装上装"></image>
+  </view>
+  <view  class="boy-clothes">
+    <block wx:for="{{accUrls}}" wx:key="{{accUrls}}">
+    <view bindtap="toList" data-cid='{{item.cid}}'>
+      <image src="{{item.img}}"></image>
+    </view>
+    </block>
+  </view>
+  
+</view>

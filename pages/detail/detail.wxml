@@ -1,0 +1,35 @@
+<!--pages/detail/detail.wxml-->
+<scroll-view scroll-y class='boy-list'> 
+<view class='goods-pic'>
+  <image src='{{img}}'></image>
+</view>
+<view class='goods-name padding'>
+  <text>{{brand}}</text>
+  <text>{{name}}</text>
+</view>
+<view class='goods-price padding'><text>￥{{price}}</text></view>
+<view class='padding border color-border'><text class='margin'>颜色</text><text class='color-text'>白色A</text><text class='color-text'>黑色B</text><text class='color-text'>红色C</text></view>
+<view class='padding border size-border'><text class='margin'>尺码</text><text class='color-text'>S</text><text class='color-text' >M</text><text class='color-text'>L</text></view>
+<view class='padding border count-border'><text class='margin'>数量</text><text class='left' bindtap='reduceCount'>-</text><text class='count'>{{count}}</text><text class='left' bindtap='addCount'>+</text></view>
+<view class='padding border bottom'><text class='margin'>库存</text><text>{{total}}</text></view>
+
+<view class='goods-buybar-flex'>
+<view class='goods-buybar'>
+  <view>
+    <image src='../../assets/img/weixin.png'></image>
+    <text>关注微信</text>
+  </view>
+  <view>
+    <image src='../../assets/img/shoucang.png'></image>    
+    <text>关注</text>
+  </view>
+  <view bindtap='bindViewTap'>
+    <image src='../../assets/img/cart.png'></image>
+    <text>购物车</text>
+  </view>
+  <view class='goods-addCart' catchtap='addToCart'>
+    <text>加入购物车</text></view>
+  <view class='goods-toBuy'><text>立即购买</text></view>
+</view>
+</view>
+</scroll-view> 

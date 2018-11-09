@@ -1,0 +1,28 @@
+<!--pages/mallList/mallList.wxml-->
+<scroll-view 
+  class='boy-scroll'
+  scroll-y
+  bindscrolltolower="loadMore"
+  bindscrolltoupper="refreshList"
+  lower-threshold="200"
+> 
+<view class='boy-list'>
+<block wx:for="{{Tshirt}}" wx:key="{{item.product_id}}">
+      <view  
+        bindtap="toDatail"
+        class='boy-list-item'
+        data-id='{{item.product_id}}'
+        data-brand='{{item.brand_name}}'
+        data-name='{{item.product_name}}'
+        data-price='{{item.price}}'
+        data-img='{{item.thumb}}'
+        data-total='{{item.total_quantity}}'
+        >
+        <image mode="widthFix" src="{{item.thumb}}"></image>
+        <text>{{item.brand_name}}</text>
+        <text>{{item.product_name}}</text>
+        <text class='boy-list-price'>￥{{item.price}}</text>
+      </view>
+</block>
+</view>
+</scroll-view> 

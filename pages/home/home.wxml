@@ -1,0 +1,31 @@
+<!--pages/home/index.wxml-->
+<swiper indicator-dots="indicator-dots"
+  autoplay="autoplay" interval="3000" duration="900" circular="ture" width="100%">
+  <block wx:for="{{imgUrls}}" wx:key="{{imgUrls}}">
+    <swiper-item >
+      <image src="{{item}}" class="slide-image" width="365" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class='boy-show'>
+  <view class='show-f'><image mode="widthFix" src="https://img.25miao.com/114/1530168021.jpg"></image></view>
+  <view class='show-s'><image mode="widthFix"             src="https://img.25miao.com/114/92288d699bd79f4b244b0c8d253c3d8b.jpg"></image></view>
+  <video width="100%" src="https://img.25miao.com/video/25boy_MV_full_220.mp4" controls="true"          poster="http://img.25miao.com/627/1509932937.jpg"></video>
+  <view class='show-t'><image mode="widthFix" src="https://img.25miao.com/114/3edb1ec81ea7a4c28c6019e346adcc00.jpg" alt="童装上新"></image></view>
+  <view class='show-t'><image mode="widthFix" src="https://img.25miao.com/114/1520928018.jpg" alt="童装上新"></image></view>
+</view>
+
+<view class='boy-list-title'>
+  <text>[热卖产品]</text>
+</view>
+<view class='boy-list'>
+  <block wx:for="{{Hot}}" wx:key="{{item.product_id}}">
+      <view class='boy-list-item'>
+        <image mode="widthFix" src="{{item.product_img}}"></image>
+        <text>{{item.brand_name}}</text>
+        <text>{{item.product_name}}</text>
+        <text class='boy-list-price'>￥{{item.price}}</text>
+      </view>
+</block>
+</view>

@@ -1,0 +1,111 @@
+/* pages/mine/mine.wxss */
+page{
+  background-color: #f2f2f2;
+}
+.boy-header {
+  background-color: white;
+}
+.boy-goods{
+   background-color: white;
+}
+.boy-order view{
+   background-color: white;
+}
+.boy-header-top{
+  width: 100%;
+  height: 200rpx;
+ background-color: red;
+  position: relative;
+}
+.boy-header-top image{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  border: 1px black double;
+  position: absolute;
+  left: 50rpx;
+  top: 120rpx;
+}
+.boy-header-top text{
+  position: absolute;
+  left: 250rpx;
+  top: 130rpx;
+  color: white;
+}
+.boy-header-bottom{
+  width: 80%;
+  height: 120rpx;
+  padding-left: 30%;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #999999;
+}
+.boy-header-left{
+  width: 45%;
+  height: 100%;
+  border-right: 1px solid #999999;
+}
+.boy-header-count{
+  color: red;
+  font-weight: bolder;
+}
+.boy-header-text{
+  color: #666666;
+}
+.boy-header-bottom>view{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*商品交易*/
+.boy-goods{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 28rpx;
+}
+.boy-goods image{
+  width: 50rpx;
+  height: 45rpx;
+}
+.boy-goods-item{
+  width: 25%;
+  height: 110rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right:  1rpx solid #999999;
+  border-bottom:  1rpx solid #999999;
+}
+
+/*订单*/
+.boy-order view{
+  width: 100%;
+  height: 80rpx;
+  font-size: 32rpx;
+  border-top: 1rpx solid #999999;
+  border-bottom:  1rpx solid #999999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40rpx;
+}
+.boy-order text{
+  padding: 0 40rpx;
+}
+.boy-order-left{
+  color: #b01f23;
+}
+.boy-order-right{
+  color: #999;
+  font-size: 26rpx;
+}
+.border{
+  border-right: none;
+  border-top: none !important;
+}

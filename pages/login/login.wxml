@@ -1,0 +1,6 @@
+<!--pages/login/login.wxml-->
+<view class='boy-login'>
+  <text>登录您的账户</text>
+  <input></input>
+
+</view>

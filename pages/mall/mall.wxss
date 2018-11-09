@@ -1,0 +1,33 @@
+/* pages/mall/mall.wxss */
+.boy-title{
+  width: 100%;
+}
+.boy-title image{
+  width: 100%;
+  height: 65px;
+}
+
+/* 分类列表 */
+.boy-clothes view{
+  width: 33%;
+}
+.boy-clothes-item{
+  width: 100%;
+  height: 125px;
+}
+.boy-mall image{
+  width: 100%;
+  height: 125px;
+}
+.boy-clothes-title{
+  margin-top: 20px;
+}
+.boy-clothes-title image{
+  width: 100%;
+  height: 35px;
+}
+.boy-clothes{
+  display: flex;
+  flex-wrap: wrap;
+
+}

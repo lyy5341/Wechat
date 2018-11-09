@@ -1,0 +1,24 @@
+<!--pages/cart/cart.wxml-->
+  <checkbox-group class="checkBoxGroup">
+  <view  class='list-box' wx:for="{{List}}" wx:key="{{item.id}}">
+      <checkbox 
+        class='box-check' 
+        bindtap="clickChecked"
+        data-id='{{item.id}}
+        checked="{{item.isChecked}}"/>
+      <view class='box-img'><image src='{{item.img}}'></image></view>
+      <view class='box-name'>{{item.name}}</view>
+      <view class='box-total'>(库存：{{item.total}}){{item.id}}</view> 
+      <view class='box-price'>￥{{item.price}}</view>
+      <view class='box-count'><text class='left' bindtap='reduceCount' data-id='{{item.id}}'>-</text><text class='count' >{{item.count}}</text><text class='left' bindtap='addCount' data-id='{{item.id}}'>+</text></view>
+  </view>
+  </checkbox-group>
+  <view class='cartBar'>
+  <label class='checkbox' bindtap='allChecked'>
+    <checkbox  checked="{{isAllChecked}}"/>
+    <text>全选</text>
+  </label>
+  <view class='totalPrice'>总价：{{totalPrice}}</view>
+  <view class='delete' bindtap='removeItem'><image src='../../assets/img/shanchu.png'></image></view>
+  <view class='buy'>立即购买</view>
+  </view>

@@ -1,0 +1,101 @@
+/* pages/cart/cart.wxss */
+.list-box{
+  width: 100%;
+  height: 120px;
+  border-bottom: 1px solid #eee;
+  font-size: 26rpx;
+  position: relative;
+}
+.box-check{
+  position: absolute;
+  left: 30rpx;
+  top: 90rpx;
+}
+.box-img image{
+  width: 200rpx;
+  height: 200rpx;
+  position: absolute;
+   left: 100rpx;
+   top: 20rpx;
+}
+.box-name{
+  position: absolute;
+   left: 320rpx;
+   top: 20rpx;
+}
+.box-total{
+  position: absolute;
+   left: 460rpx;
+   top: 105rpx;
+   color: #666;
+   font-size: 20rpx;
+}
+.box-price{
+   position: absolute;
+   left: 320rpx;
+   top: 100rpx;
+}
+.box-count{
+   position: absolute;
+   left: 320rpx;
+   top: 180rpx;
+}
+
+.left{
+  border: 2px solid #eee;
+  border-radius: 20%;
+  padding:2rpx 15rpx;
+}
+.count{
+  border: 2px solid #eee;
+  border-radius: 10%;
+  padding:2rpx 40rpx;
+  margin: 0 8px;
+}
+.checkBoxGroup{
+  margin-bottom: 100rpx;
+}
+
+.cartBar{
+  width: 100%;
+  height: 100rpx;
+  position: fixed;
+  bottom: 0;
+  font-size: 35rpx;
+  background: rgba(17,17,17,0.95);
+  color: #fff;
+}
+.checkbox{
+  position: absolute;
+  left: 20rpx;
+  top: 25rpx;
+  font-size: 28rpx;
+}
+.totalPrice{
+  position: absolute;
+  left: 180rpx;
+  top: 20rpx;
+}
+.delete{
+  width: 90rpx;
+  height: 100rpx;
+  background: #333;
+  position: absolute;
+  left: 420rpx;
+  top: 0;
+  padding:15rpx 11rpx;
+}
+.delete image{
+  width: 70rpx;
+  height: 70rpx; 
+}
+.buy{
+  width: 200rpx;
+  height: 100rpx;
+  text-align: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 20rpx;
+  background: #b01f23;
+}
