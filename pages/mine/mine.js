@@ -1,4 +1,5 @@
 // pages/mine/mine.js
+const app = getApp()
 Page({
 
   /**
@@ -6,6 +7,7 @@ Page({
    */
   data: {
     name: '25boy',
+    head: '../../assets/img/head.jpg',
     collect: 1,
     history: 2,
     money: 0.00,
@@ -15,7 +17,11 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    console.log(app.userifo)
+    this.setData({
+      name: app.userifo.nickName,
+      head: app.userifo.avatarUrl
+    })
   },
 
   /**

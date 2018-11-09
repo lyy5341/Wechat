@@ -1,6 +1,6 @@
-<!--pages/login/login.wxml-->
-<view class='boy-login'>
-  <text>登录您的账户</text>
-  <input></input>
-
-</view>
+<!--index.wxml bindtap="bindViewTap"-->
+  <view class="userinfo">
+    <image src='https://img.vipcn.com/img2017/3/1/2017030164129950.jpg'></image>
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" > 微信授权登录 </button>
+    <view><text>是否允许25boy获取你的微信个人信息</text></view>
+  </view>

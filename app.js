@@ -5,7 +5,13 @@ App({
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
+    wx.login({
+      success: res => {
+        
+    }
+  })
   },
+  userifo: wx.getStorageSync("user-ifo"),
   cart: wx.getStorageSync("mall-List") || [],
   addToCart(item){
     const isInCart = this.cart.some(cartItem => cartItem.id === item.id);

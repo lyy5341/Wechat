@@ -1,1 +1,26 @@
-/* pages/login/login.wxss */
+/**index.wxss**/
+page{
+  height: 100%;
+}
+.userinfo {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+.userinfo image{
+  width: 600rpx;
+  height: 500rpx;
+}
+.userinfo button{
+  background-color: #f2f2f2;
+  height: 100rpx;
+}
+.userinfo view{
+  height: 100rpx;
+  color: #999;
+  font-size: 24rpx;
+}

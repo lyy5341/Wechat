@@ -2,7 +2,7 @@
 <view class='boy-body'>
 <view class='boy-header'>
   <view class='boy-header-top'>
-    <image src='../../assets/img/head.jpg'></image>
+    <image src='{{head}}'></image>
     <text>{{name}}</text>
   </view>
   <view class='boy-header-bottom'>
